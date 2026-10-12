@@ -1,0 +1,169 @@
+
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f3;
+    color: #333333;
+}
+
+/* Header */
+header {
+    background-color: #176b45;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+/* Main Content */
+main {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #176b45;
+    margin-bottom: 20px;
+}
+
+/* Food Cards */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+}
+
+.card h3 {
+    color: #176b45;
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+input,
+select {
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 15px;
+    max-width: 100%;
+}
+
+input[name="customer_name"],
+input[name="phone"] {
+    display: block;
+    width: 100%;
+}
+
+/* Buttons */
+button {
+    background-color: #176b45;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #105536;
+}
+
+/* Notifications */
+.message {
+    background-color: #e0f5e7;
+    color: #155b36;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 15px 0;
+    border-left: 5px solid #176b45;
+}
+
+/* Links */
+a {
+    color: #176b45;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Order Management Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #176b45;
+    color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f8faf9;
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 600px) {
+    main {
+        margin: 10px auto;
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
